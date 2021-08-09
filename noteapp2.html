@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<style>
+
+* {
+  box-sizing: border-box;
+}
+
+/* Header/logo Title */
+.header {
+  padding: 10px;
+  text-align: center;
+  background: #1abc9c;
+  color: white;
+}
+
+/* IMAGE PLACEHOLDER */
+.header h1 {
+  font-size: 40px;
+}
+
+.menu {
+  float: left;
+  width: 20%;
+  text-align: center;
+}
+
+.menu a {
+  background-color: #e5e5e5;
+  padding: 8px;
+  margin-top: 7px;
+  display: block;
+  width: 100%;
+  color: black;
+}
+
+.main {
+  float: left;
+  width: 60%;
+  padding: 0 20px;
+}
+
+.right {
+  background-color: #e5e5e5;
+  float: left;
+  width: 100%;
+  padding: 15px;
+  margin-top: 7px;
+  text-align: center;
+}
+
+.right a {
+  background-color: #e5e5e5;
+  padding: 8px;
+  margin-top: 7px;
+  display: block;
+  width: 100%;
+  color: black;
+}
+
+
+@media only screen and (max-width: 620px) {
+  /* For mobile phones: */
+  .menu, .main, .right {
+    width: 100%;
+  }
+}
+</style>
+</head>
+
+<div class="header">
+  <h1>NOTE IT HERE</h1>
+  <img src="postit.png" style="width:10%;">
+</div>
+
+
+<body style="font-family:Verdana;color:#aaaaaa;">
+
+<div style="background-color:#e5e5e5;padding:15px;text-align:center;">
+  <h2>The Note Taker</h2>
+</div>
+
+<div style="overflow:auto">
+  <div class="menu">
+    <a href="#">Add Note</a>
+    <a href="#">Add Reminder</a>
+    <a href="#">Add Topic</a>
+    <a href="#">Archive</a>
+  </div>
+
+  <div class="main">
+    <h2>Saved notes appear below here:</h2>
+    <p>EMPTY SPACE FOR NOTES</p>
+  </div>
+
+  <div style="overflow:auto">
+  <div class="right">
+    <h2>REMINDERS:</h2>
+    <p><br><a href="#" target="_blank">EMPTY RMINDER</a>
+    <a href="#" target="_blank">EMPTY REMINDER</a>
+    <a href="#" target="_blank">EMPTY REMINDER</a></p>
+  </div>
+</div>
+
+<div style="background-color:#e5e5e5;text-align:center;padding:10px;margin-top:7px;">&#169; 2021 NINA OMAR</div>
+
+</body>
+</html>

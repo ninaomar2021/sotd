@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+  <head>
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css">
+    <script src="https://code.jquery.com/jquery-1.11.3.min.js"></script>
+    <script src="https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
+    <link rel="stylesheet" href="css/themes/mytheme.css" />
+    <link rel="stylesheet" href="css/themes/mytheme.min.css" />
+    <link rel="stylesheet" href="css/themes/jquery.mobile.icons.min.css" />
+    <link rel="stylesheet" href="http://code.jquery.com/mobile/1.4.5/jquery.mobile.structure-1.4.5.min.css" />
+    <script src="https://code.jquery.com/jquery-1.11.1.min.js"></script>
+    <script src="https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
+
+  </head>
+<body>
+
+<div id="image2" data-role="page" data-theme="a" data-add-back-btn="true" data-back-btn-text="previous">
+<div data-role="header" data-theme="a" data-add-back-btn = "true">
+<a role="button" href="homepage.html" class="ui-btn ui-corner-all ui-shadow ui-btn-left ui-btn-a ui-toolbar-back-btn ui-icon-carat-l ui-btn-icon-left" data-rel="back">Back</a>
+  <h1>Action</h1>
+</div>
+<div data-role="content">
+  <h3>Robocop</h3>
+  <p> Robocop was released 1987.</p>
+  <img src="robocop.jpg" width="200" height="121">
+</div>
+
+
+<p> Here are more of my favorite action movies saved in local storage: </p>
+<div id="result"></div>
+
+  <script>
+    var favorite = ["The One", "Terminator", "The Raid", "Ninja Assassin"];
+      localStorage.setItem("favorite", JSON.stringify(favorite));
+
+      document.getElementById("result").innerHTML = localStorage.getItem("favorite");
+    </script>
+
+</body>
+</html>
